@@ -1,0 +1,31 @@
+{
+  "scripts": {
+    "start": "npm-run-all --parallel server client",
+    "build": "snowpack build",
+    "client": "snowpack dev",
+    "server": "cross-env nodemon -e '*' --exec \"babel-node server -x '.js','.jsx' --config-file ./babel.config.json\" --watch content --watch server "
+  },
+  "devDependencies": {
+    "@babel/node": "^7.14.2",
+    "@snowpack/app-scripts-preact": "^2.0.1",
+    "@snowpack/plugin-run-script": "^2.3.0",
+    "@snowpack/plugin-webpack": "^2.3.1",
+    "babel-node": "^0.0.1-security",
+    "babel-plugin-css-modules-transform": "^1.6.2",
+    "babel-preset-preact": "^2.0.0",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5",
+    "snowpack": "^3.5.0",
+    "string-hash": "^1.1.3"
+  },
+  "dependencies": {
+    "fbemitter": "^3.0.0",
+    "htm": "^3.0.4",
+    "navigo": "^8.11.1",
+    "preact": "^10.5.13",
+    "preact-compat": "^3.19.0",
+    "preact-render-to-string": "^5.1.19",
+    "zlib": "^1.0.5"
+  }
+}

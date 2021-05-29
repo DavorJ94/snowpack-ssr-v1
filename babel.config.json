@@ -1,0 +1,16 @@
+{
+  "presets": [
+    ["@babel/preset-env", { "targets": { "node": "current" } }],
+    "preact"
+  ],
+  "plugins": [
+    [
+      "css-modules-transform",
+      {
+        "generateScopedName": "./server/convertToModuleCss.js",
+        "extractCss": "./build/dist/stylesheets/combined.css"
+      }
+    ],
+    "@babel/plugin-proposal-optional-chaining"
+  ]
+}
