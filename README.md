@@ -1,7 +1,7 @@
-# Simple snowpack SSR for multiple components (multiple divs in one component) and css modules
+# Simple snowpack SSR for multiple components (multiple divs) and css modules
 
 Simple to do app built with snowpack and optimized for SSR. Babel is used for css modules conversion with custom function.
-SSR is created using snowpack as building package.
+SSR is created using snowpack as building package, and http is used for server initialization.
 
 There is still a lot of improvement to be done in the SSR approach taken in the app, like not downloading stylesheets twice (since it is partial SSR) and a few more things.
 
